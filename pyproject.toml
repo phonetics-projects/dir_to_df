@@ -1,0 +1,34 @@
+[build-system]
+requires = ['setuptools >= 77.0.3', 'wheel']
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'dir_to_df'
+authors = [{name = "Keith Johnson", email = "kjohnson@berkeley.edu"},
+            {name = "Ronald Sprouse", email = "ronald@berkeley.edu"} 
+]
+description = "Manage a corpus of filepaths and metadata as a Pandas DataFrame created from a directory tree"
+readme = "README.md"
+requires-python = ">= 3.0"
+#dynamic = ["version"]
+version = "0.0.1"
+
+dependencies = [
+    'pandas'
+]
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Operating System :: OS Independent',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering',
+]
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/phonetics-projects/dir_to_df"
+Issues = "https://github.com/phonetics-projects/dir_to_df/issues"
+
+#[tool.setuptools.dynamic]
+#version = {attr="dir_to_df.__version__"}
+
